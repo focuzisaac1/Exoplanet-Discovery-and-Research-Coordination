@@ -1,0 +1,29 @@
+[project]
+name = 'Exoplanet-Discovery-and-Research-Coordination'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.exoplanet-discovery]
+path = 'contracts/exoplanet-discovery.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.peer-review]
+path = 'contracts/peer-review.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.telescope-allocation]
+path = 'contracts/telescope-allocation.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
